@@ -21,6 +21,11 @@ class UsersView extends Users{
     /* === SHOW ALL DATA FROM THE DATABASE === */
     public function showAllUsers(){
         $datas = $this->getAllUsers();
-        include 'usersTableView.php';
+        if ($datas !== 0) {
+            include 'usersTableView.php';
+        }
+        else{
+            echo "No records available";
+        }
     }
 }

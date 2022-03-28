@@ -32,6 +32,9 @@ class Users extends DatabaseConnect {
             }
             return $data;
         }
+        else{
+            return $data = 0;
+        }
         
     }
 
