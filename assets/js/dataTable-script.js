@@ -3,6 +3,7 @@
     $('.table').DataTable({
         retrieve: true,
         pagingType:'full_numbers',
-        lengthMenu:[[5, 10,20,30,50,-1],[5,10,20,30,50,"All"]]
+        lengthMenu:[[10,20,30,50,-1],[10,20,30,50,"All"]],
+        "order": [[ 3, "ASC" ]]
     });
   });

@@ -1,0 +1,61 @@
+
+
+/* Data Table */
+.table-wrap{
+   width: 100%;
+ }
+ /*============= table pagination styles =================*/
+ 
+ a.paginate_button.current {
+   background-color:#d2d7d3;
+   color: black;
+   padding:.5rem 1rem;
+   cursor: pointer;
+   border-radius: .3rem;
+   border:1px solid black;
+ }
+ a.paginate_button {
+   padding: 10px 15px;
+   cursor: pointer;
+   color: black ;
+   font-size: 14px;;
+ }
+ 
+ .first, .next, .previous, .last{
+   padding: .5rem 1rem;
+   cursor: pointer;
+   text-decoration-line: none;
+   color: black;
+ }
+ .first:hover,.previous:hover,.next:hover,.last:hover,a.paginate_button:hover:not(.current){
+   background-color: black;
+   color: white;
+   border:1px solid black;
+   border-radius: .3rem;
+   text-decoration: none;
+ }
+  
+ /*============= table  styles =================*/
+ table td{
+   padding: .3rem !important;
+   font-size: 12px;
+ }
+ 
+ thead tr th, tfoot tr th{
+   background-color: #162955 ;
+   color: white;
+   text-align: center;
+ }
+ 
+ tbody tr:hover{
+   background-color: #162955 !important;
+   color: white;
+ }
+ input[type=search]{
+       padding: 0 0 0 1rem;
+ }
+ .tbl-action{
+   text-align: center;
+ }
+ 
+ 

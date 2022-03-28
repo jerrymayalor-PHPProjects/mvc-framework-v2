@@ -18,5 +18,6 @@ function myAutoLoader( $className ){
         return false;
     }
     require_once $fileName;
+    include 'components/modals.php';
 
 }

@@ -5,7 +5,7 @@ use Models\Users;
 use Views\UsersView;
 
 include 'includes/class-autoloader.inc.php';
-include 'components/modals.php';
+
 
 ?>
 
@@ -18,7 +18,7 @@ include 'components/modals.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
 	 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"> 
      
 </head>
@@ -28,17 +28,15 @@ include 'components/modals.php';
             <div class="row w-100 my-5">
                 <div class="col">
                     <h1>OOP</h1>
-                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Add User</button>
+                    <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-primary">Add User</button>
                 </div>
             </div>
-            <di class="row" style="overflow-y: auto;">
-                <div class="col" style="max-height:400px;">
-                    <div class="table-wrap">
+            <di class="row">
+                <div class="col">
                         <?php
                             $users = new UsersView();
                             $users->showAllUsers();                            
                         ?>
-                    </div>
                 </div>
             </div>
         </center>
@@ -51,6 +49,7 @@ include 'components/modals.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
 <script  src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/dataTable-script.js"></script>
+<script src="assets/php/custom-php-scripts.php"></script>
 
     </body>
 </html>

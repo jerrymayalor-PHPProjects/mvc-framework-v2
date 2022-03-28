@@ -21,9 +21,6 @@ class UsersView extends Users{
     /* === SHOW ALL DATA FROM THE DATABASE === */
     public function showAllUsers(){
         $datas = $this->getAllUsers();
-        foreach ( $datas as $data ) {
-           echo $data['id']. " : " . $data['name']." : " . $data['age']. "<hr>";     
-        }
-        
+        include 'usersTableView.php';
     }
 }
